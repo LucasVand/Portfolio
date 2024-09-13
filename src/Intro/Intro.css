@@ -1,0 +1,32 @@
+.introCont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.introDesCont {
+    display: block;
+    padding: 5em;
+}
+
+.introTitle {
+
+    font-weight: 900;
+    font-size: 4em;
+
+    text-align: left;
+    line-height: 1em;
+
+
+}
+
+.underIntro {
+    text-align: left;
+
+    font-weight: 550;
+    font-size: 1.2em;
+
+    font-family: Arial;
+
+}

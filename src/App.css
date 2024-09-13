@@ -3,40 +3,37 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #4B525B;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.aboutMeCont {
+  text-align: left;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 20em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutMeTitle {
+  font-weight: 600;
+  font-size: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.aboutMeDes {
+  font-weight: 400;
+  font-size: larger;
 }
 
-.card {
-  padding: 2em;
-}
+.divider {
+  width: 80%;
+  height: 0.2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 1%/100%;
+  margin-top: 5em;
 
-.read-the-docs {
-  color: #888;
+  background-color: #4B525B;
 }

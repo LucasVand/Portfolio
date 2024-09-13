@@ -1,0 +1,24 @@
+.bg {
+    background-color: #D2DCE6;
+
+
+    border-radius: 0.6em;
+
+    color: #4B525B;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    min-width: 20px;
+    min-height: 20px;
+
+    padding: 1em;
+
+    margin: 1em;
+
+    position: relative;
+}

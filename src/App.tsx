@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 
+import Intro from './Intro/Intro'
+import StaticBox from './StaticBox/StaticBox'
+
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+      <Intro></Intro>
+      <div className='divider'></div>
+
+      <div className='aboutMeCont'>
+        <div className='aboutMeTitle'>About Me</div>
+        <p className='aboutMeDes'>My name is Lucas Vanderwielen and I am currently a student at the University of Western Ontario. I'm currently a first year studying computer science. My passion is front end design, I have worked hard over the past few years to learn as much as I can about front end develpoment. I taught myself Swift and Swift UI to develope IOS applications. Then I moved on to learning web, which then I taught myself React, CSS and HTML. I have also dabbled in many other languages such as C#, Python, C++. </p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
+
   )
 }
 
