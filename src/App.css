@@ -10,22 +10,7 @@
   flex-direction: column;
 }
 
-.aboutMeCont {
-  text-align: left;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 20em;
-}
 
-.aboutMeTitle {
-  font-weight: 600;
-  font-size: 2em;
-}
-
-.aboutMeDes {
-  font-weight: 400;
-  font-size: larger;
-}
 
 .divider {
   width: 80%;
@@ -33,7 +18,8 @@
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 1%/100%;
-  margin-top: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 
   background-color: #4B525B;
 }

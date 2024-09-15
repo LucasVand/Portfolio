@@ -5,9 +5,10 @@ interface props {
     height?: number
     children?: React.ReactNode
     inset?: boolean
+    margin?: string
 }
 
-function StaticBox({ height = 1, children, inset }: props) {
+function StaticBox({ height = 1, children, inset, margin }: props) {
     const values = () => {
         if (height == 1) {
             if (inset) {
@@ -34,7 +35,7 @@ function StaticBox({ height = 1, children, inset }: props) {
     }
     return (
         <>
-            <div className={style.bg} style={{ boxShadow: `${values()[0]}${values()[1]}px ${values()[1]}px ${values()[2]}px #969696, ${values()[0]}-${Number(values()[1]) * 2}px -${Number(values()[1]) * 2}px ${values()[2]}px #E6EDF5`, margin: `${height}em` }}>
+            <div className={style.bg} style={{ boxShadow: `${values()[0]}${values()[1]}px ${values()[1]}px ${values()[2]}px #969696, ${values()[0]}-${Number(values()[1]) * 2}px -${Number(values()[1]) * 2}px ${values()[2]}px #E6EDF5`, margin: `${margin != undefined ? margin : (height + 'em')}` }}>
                 {children}
             </div>
         </>

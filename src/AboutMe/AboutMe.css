@@ -1,0 +1,58 @@
+.aboutMeCont {
+    text-align: left;
+    margin-left: 5em;
+
+    margin-top: 20em;
+}
+
+.aboutMeTitle {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.aboutMeDes {
+    font-weight: 400;
+    font-size: larger;
+}
+
+.credsCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.credsBox {
+    width: 10vw;
+
+}
+
+
+
+.credsTitle {
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+.credsSubTitle {
+    font-weight: 500;
+    font-size: 1.5em;
+    width: 85%;
+    text-align: left;
+}
+
+.credsTime {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: #56D3AE;
+    margin-left: 2em;
+}
+
+.credsDescList {
+    text-wrap: wrap;
+    max-width: 20vw;
+    text-align: left;
+    font-family: Arial;
+
+}
