@@ -11,39 +11,43 @@ function AboutMe() {
             </div>
             <div className='credsCont'>
                 <StaticBox>
-                    <div className='credsTitle'>Education</div>
-                    <div className='divider'></div>
-                    <div className='credsSubTitle'>Highschool</div>
-                    <ul className='credsDescList'>
-                        <li>Honours student through all 4 years</li>
-                        <li>94% grade 12 average</li>
-                    </ul>
-                    <div className='credsSubTitle'>University</div>
-                    <ul className='credsDescList'>
-                        <li>Currently attending the Universty of Western Ontario</li>
-                        <li>Honours Specialization in Computer Science</li>
+                    <div className='credsBox'>
+                        <div className='credsTitle'>Education</div>
+                        <div className='divider'></div>
+                        <div className='credsSubTitle'>Highschool</div>
+                        <ul className='credsDescList'>
+                            <li>Honours student through all 4 years</li>
+                            <li>94% grade 12 average</li>
+                        </ul>
+                        <div className='credsSubTitle'>University</div>
+                        <ul className='credsDescList'>
+                            <li>Currently attending the Universty of Western Ontario</li>
+                            <li>Honours Specialization in Computer Science</li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </StaticBox>
                 <StaticBox>
-                    <div className='credsTitle'>Work Experience</div>
-                    <div className='divider'></div>
-                    <div className='credsSubTitle'>Lifeguard <span className='credsTime'>2022 - Present</span> </div>
-                    <ul className='credsDescList'>
-                        <li>Ensused the safety and security and orderliness of an aquatic facility</li>
-                        <li>Taught children how to swim and the importance of water safety</li>
-                        <li>Coordinated large teams of other lifeguards</li>
-                        <li>Ensured pateron and lifeguard safety at all times</li>
-                    </ul>
+                    <div className='credsBox'>
+                        <div className='credsTitle'>Work Experience</div>
+                        <div className='divider'></div>
+                        <div className='credsSubTitle'>Lifeguard <span className='credsTime'>2022 - Present</span> </div>
+                        <ul className='credsDescList'>
+                            <li>Ensused the safety and security and orderliness of an aquatic facility</li>
+                            <li>Taught children how to swim and the importance of water safety</li>
+                            <li>Coordinated large teams of other lifeguards</li>
+                            <li>Ensured pateron and lifeguard safety at all times</li>
+                        </ul>
 
 
-                    <div className='credsSubTitle'>IT Intern <span className='credsTime'>2023 - 2024</span></div>
-                    <ul className='credsDescList'>
-                        <li>Identified and provied support on technical issues</li>
-                        <li>Created new computer systems and networks</li>
-                        <li>Maintained current computer systems in the company</li>
-                        <li>Coordinated with other teams to provied the best support</li>
-                    </ul>
+                        <div className='credsSubTitle'>IT Intern <span className='credsTime'>2023 - 2024</span></div>
+                        <ul className='credsDescList'>
+                            <li>Identified and provied support on technical issues</li>
+                            <li>Created new computer systems and networks</li>
+                            <li>Maintained current computer systems in the company</li>
+                            <li>Coordinated with other teams to provied the best support</li>
+                        </ul>
+                    </div>
                 </StaticBox>
             </div>
         </>

@@ -1,11 +1,67 @@
 .projectsTitle {
     text-align: left;
-
+    font-weight: 800;
+    font-size: 4em;
 }
 
 .projectsCont {
     text-align: left;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-top: 20em;
+
+    margin-top: 2em;
+}
+
+
+
+.projectName {
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.projectDesCont {
+    margin: 2em;
+}
+
+.projectsCardCont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-height: 450px;
+}
+
+@media only screen and (max-width: 900px) {
+    .projectsCardCont {
+        flex-wrap: wrap;
+        max-height: 100vh;
+    }
+
+
+    .projectsCont {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+
+.projectsTechUsedCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    margin-top: 1em;
+}
+
+.techUsed {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-radius: 2em;
+    color: white;
+
 }
