@@ -3,8 +3,8 @@
     background-color: #D2DCE6;
     box-shadow: 4px 4px 4px #969696, -4px -4px 4px #E6EDF5;
     backface-visibility: hidden;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 20px;
+    min-height: 20px;
     aspect-ratio: 1/1;
 
     border-style: none;
@@ -18,7 +18,7 @@
     align-items: center;
 
     margin: 1em;
-    padding: 0.5em;
+    padding: 20%;
 }
 
 .circleBG.toggle {

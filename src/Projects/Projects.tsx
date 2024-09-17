@@ -88,7 +88,7 @@ function TechUsedCard(props: TechUsedProps) {
 
     return (
         <>
-            <div className='techUsed' style={{ backgroundColor: props.color + '90', borderColor: props.color }}>{props.name}</div>
+            <div className='techUsed' style={{ backgroundColor: props.color + '90', borderColor: props.color, textWrap: 'nowrap' }}>{props.name}</div>
         </>
 
     )
@@ -103,7 +103,7 @@ function GitHub(props: GitHubProps) {
         <>
             <div style={{ marginLeft: '1em' }}>
                 <CircleButton on={false}>
-                    <img src={GitHubLogo} style={{ width: '3em', height: '3em' }} onClick={() => { window.location.href = props.url }}></img>
+                    <img src={GitHubLogo} className='github' onClick={() => { window.location.href = props.url }}></img>
                 </CircleButton>
             </div>
         </>
