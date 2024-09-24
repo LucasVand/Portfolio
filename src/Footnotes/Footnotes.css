@@ -10,3 +10,10 @@
     margin: 1em;
     max-width: 2%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .footnoteImage {
+        max-width: 10%;
+    }
+}

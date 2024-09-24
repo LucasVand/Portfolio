@@ -2,11 +2,13 @@ import StaticBox from '../StaticBox/StaticBox'
 import './Projects.css'
 import MenuDemo from '../assets/ShifterDemo.png'
 import GameDemo from '../assets/ShifterDemoLevel.png'
-import ClockDemo from '../assets/ClockDemo.png'
+import ClockDemo from '../assets/NeumorphicClockDemo.png'
 import TetrisDemo from '../assets/TetrisDemo.png'
 import GitHubLogo from '../assets/GitHubLogo.png'
 import CircleButton from '../CircleButton/CircleButton'
+import WeatherDemo from '../assets/WeatherAppDemo.png'
 
+import LinkLogo from '../assets/Link.png'
 
 function Projects() {
     return (
@@ -27,8 +29,8 @@ function Projects() {
                                 </div>
                             </div>
 
-                            <img src={MenuDemo} style={{ maxWidth: '17%', marginRight: '1em', marginLeft: '1em' }}></img>
-                            <img src={GameDemo} style={{ maxWidth: '17%', marginRight: '1em', marginLeft: '1em' }}></img>
+                            <img src={MenuDemo} className='projectsImage' style={{ maxWidth: '17%', marginRight: '1em', marginLeft: '1em' }}></img>
+                            <img src={GameDemo} className='projectsImage' style={{ maxWidth: '17%', marginRight: '1em', marginLeft: '1em' }}></img>
                         </div>
 
                     </StaticBox>
@@ -41,8 +43,10 @@ function Projects() {
                                 <div className='projectsTechUsedCont'>
                                     <TechUsedCard name='React' color='#61DBFB'></TechUsedCard>
                                     <TechUsedCard name='TypeScript' color='#3178C6'></TechUsedCard>
+                                    <TechUsedCard name='CSS' color='#2965f1'></TechUsedCard>
                                     <TechUsedCard name='Web' color='#000000'></TechUsedCard>
                                     <GitHub url='https://github.com/LucasVand/Neumorphic-Clock'></GitHub>
+                                    <Link url='https://lucasvand.github.io/Neumorphic-Clock/'></Link>
                                 </div>
                             </div>
 
@@ -65,7 +69,28 @@ function Projects() {
                                 </div>
                             </div>
 
-                            <img src={TetrisDemo} className='projectsImage' style={{ maxWidth: '38%', border: 'black solid 0.3em', borderRadius: '0.5em' }}></img>
+                            <img src={TetrisDemo} className='projectsImage' style={{ maxWidth: '31%', marginRight: '3.7em', marginLeft: '4.0em', boxShadow: '1em 1em 3em rgba(40,40,40, 0.7)' }}></img>
+
+
+                        </div>
+
+                    </StaticBox>
+                    <StaticBox>
+                        <div className='projectsCardCont'>
+                            <div className='projectDesCont'>
+                                <div className='projectName'>Weather App</div>
+                                <div className='projectDesc'>This is a fun little weather app which introduced me to API's and working with them and promises and async functions. It is a standard weather app which uses an open source weather API. It shows all of the basic information and it even shows you your location and what region, country, and city.  </div>
+                                <div className='projectsTechUsedCont'>
+                                    <TechUsedCard name='React' color='#61DBFB'></TechUsedCard>
+                                    <TechUsedCard name='TypeScript' color='#3178C6'></TechUsedCard>
+                                    <TechUsedCard name='CSS' color='#2965f1'></TechUsedCard>
+                                    <TechUsedCard name='Web' color='#000000'></TechUsedCard>
+                                    <GitHub url='https://github.com/LucasVand/Weather-App'></GitHub>
+                                    <Link url='https://lucasvand.github.io/Weather-App'></Link>
+                                </div>
+                            </div>
+
+                            <img src={WeatherDemo} className='projectsImage' style={{ maxWidth: '38%', marginRight: '1em', marginLeft: '1em' }}></img>
 
 
                         </div>
@@ -104,6 +129,19 @@ function GitHub(props: GitHubProps) {
             <div style={{ marginLeft: '1em' }}>
                 <CircleButton on={false}>
                     <img src={GitHubLogo} className='github' onClick={() => { window.location.href = props.url }}></img>
+                </CircleButton>
+            </div>
+        </>
+    )
+}
+
+function Link(props: GitHubProps) {
+
+    return (
+        <>
+            <div>
+                <CircleButton on={false}>
+                    <img src={LinkLogo} className='github' onClick={() => { window.location.href = props.url }}></img>
                 </CircleButton>
             </div>
         </>

@@ -46,6 +46,13 @@
         width: 0.5em;
         height: 0.5em;
     }
+
+    .projectsImage {
+        display: none;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
 }
 
 
@@ -59,12 +66,18 @@
 
 }
 
+.projectsImage {
+    display: block;
+
+}
+
 .techUsed {
+    font-size: 0.7em;
     text-align: center;
     padding-left: 1em;
     padding-right: 1em;
     margin: 0.4em;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     border-style: solid;
     border-radius: 2em;
     color: white;
@@ -75,4 +88,9 @@
 .github {
     height: 2em;
     width: 2em;
+
+}
+
+.imageOverlay {
+    background-color: rgba(94, 97, 127, 0.4);
 }

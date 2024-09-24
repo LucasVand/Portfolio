@@ -11,12 +11,12 @@ function Footnotes() {
                     ©2024 · Lucas Vanderwielen
                 </div>
 
-                <img className="footnoteImage" src={GithubLogo} style={{ scale: '1.05' }}></img>
+                <img className="footnoteImage" src={GithubLogo} onClick={() => { window.location.href = 'https://github.com/LucasVand' }}></img>
 
 
-                <img className="footnoteImage" src={InstagramLogo} ></img>
+                <img className="footnoteImage" src={InstagramLogo} onClick={() => { window.location.href = 'https://www.instagram.com/lucasvand5/' }}></img>
 
-                <img className="footnoteImage" src={EmailLogo} style={{ scale: '1.35' }}></img>
+                <img className="footnoteImage" src={EmailLogo} onClick={() => { window.location.href = 'mailto:lucasvanderwielen@icloud.com' }}></img>
 
             </div >
         </>
